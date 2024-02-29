@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        #regalo {
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 50px auto;
+            max-width: 400px;
+        }
+        h1 {
+            color: #ff5733;
+        }
+        p {
+            font-size: 16px;
+            color: #333;
+        }
+        #mensaje {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #009688;
+        }
+        #imagen-regalo {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        #boton-regalo {
+            background-color: #009688;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="regalo">
+    <h1>Happy Birthday MJ 💗</h1>
+    <p>¡Te deseo un día lleno de alegría y felicidad!</p>
+    <img id="imagen-regalo" src="mj.png" alt="Happy Birthday MJ ❤️">
+    <p id="mensaje"></p>
+    <button id="boton-regalo" onclick="generarMensaje()">Abrir Regalo</button>
+</div>
+
+<script>
+    function generarMensaje() {
+        var mensajes = [
+            "Que este año te traiga todo lo que deseas.",
+            "¡Que cada día esté lleno de sorpresas y sonrisas para ti!",
+            "Gracias por ser una persona increíble y sincera conmigo.",
+            "Y perdona que te robe una foto tuya jiji, Te adoro Eternamente querida abogada 💗.",
+           
+        ];
+
+        var mensajeAleatorio = mensajes[Math.floor(Math.random() * mensajes.length)];
+        document.getElementById("mensaje").innerHTML = mensajeAleatorio;
+    }
+
+</script>
+
+</body>
+
+</html>
+
+
